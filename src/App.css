@@ -1,0 +1,292 @@
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Gotham'), url('https://fonts.cdnfonts.com/s/62851/GothamBook.woff') format('woff');
+}
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Gotham'), url('https://fonts.cdnfonts.com/s/62851/GothamLight.woff') format('woff');
+}
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Gotham'), url('https://fonts.cdnfonts.com/s/62851/GothamMedium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Gotham Black';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Gotham Black'), url('https://fonts.cdnfonts.com/s/62851/GothamBlack.woff') format('woff');
+}
+
+
+.debug {
+  background-color: red;
+}
+
+.App {
+  background-color: #FBFBFC;
+  margin-top: 1vh;
+}
+
+.footer {
+  bottom: 0;
+  width: 100vw;
+  margin-top: 6rem;
+  pointer-events: none;
+}
+.footerContent {
+  display: 'flex';
+  position: absolute;
+  height: auto;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+}
+
+.bodyContainer {
+  position: relative;
+  margin-left: 5%;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.overlay {
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1vh;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.overlay div{
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 3,
+}
+
+.form {
+  background-color: #ffffff;
+  width: 42.26vw;
+  min-height: 39.86vw;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding-bottom: 2rem;
+}
+
+.form div {
+  margin: 0.56vw;
+  margin-bottom: 0rem;
+}
+
+.header {
+  font-family: 'Gotham';
+  font-size: 2.75vw;
+  font-weight: 700;
+  line-height: 3.61vw;
+  letter-spacing: 0em;
+  margin-bottom: 0;
+  color: #452C78;
+  text-align: left;
+}
+
+.description {
+  font-family: Gotham;
+  font-size: 0.96vw;
+  font-weight: 400;
+  line-height: 1.73vw;
+  letter-spacing: 0.01vw;
+  color: #452C78;
+  text-align: left;
+}
+
+.input {
+  display: 'flex';
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+}
+
+.input span{
+  font-size: 0.9vw;
+  color: #615D66;
+  font-family: 'Gotham', 'sans-serif';
+}
+
+.selectFromRow {
+  font-size: 0.93vw;
+  font-weight: 500;
+  letter-spacing: 0em;
+  margin-left: 2vw;
+  border: none;
+  background-color: transparent;
+  color: #FFFFFF;
+  transition: 0.1s;
+}
+.selectFromRow:hover {
+  color: #9966b3;
+}
+
+.activeRowIndicator{
+  width: 100px;
+}
+
+.chevronRotate {
+  transition: ease 0.3s;
+}
+.rotate {
+  animation: chevronSpin 0.3s ease;
+}
+
+.inputSmall {
+  border: 1.5px solid rgba(69, 44, 120, 0.25);
+  border-radius: 4px;
+  height: 5.46vh;
+  width: 18vw;
+  background-color: transparent;
+  transition: 0.1s;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.inputSmallButton {
+  border: 1.5px solid rgba(69, 44, 120, 0.25);
+  border-radius: 4px;
+  height: 5.46vh;
+  width: 18vw;
+  background-color: transparent;
+  transition: 0.1s;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.inputSmallButtonClicked {
+  border: 1.5px solid #452C78;
+  border-radius: 4px;
+  height: 5.46vh;
+  width: 18vw;
+  background-color: transparent;
+  transition: 0.1s;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.inputLarge {
+  border: 1.5px solid rgba(69, 44, 120, 0.25);
+  border-radius: 4px;
+  height: 21.86vh;
+  width: 38.2vw;
+  transition: 0.1s;
+  outline: none;
+  resize: none;
+  font-family: 'arial';
+  box-sizing: border-box;
+}
+
+.resetButton {
+  width: 190px;
+  height: 50px;
+  border-radius: 3px;
+  border: 1px solid rgba(97, 93, 102, 0.1);
+  background-color: rgba(242, 136, 117, 0.1);
+  transition: 0.1s;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.resetButton:hover {
+  border: 1px solid rgb(253, 164, 148);
+  background-color: rgb(236, 109, 87);
+}
+.resetButton:hover span{
+  color: #000000
+}
+
+.submitButton {
+  width: 190px;
+  height: 50px;
+  border-radius: 3px;
+  border: none;
+  background-color: #F28875;
+  transition: 0.1s;
+}
+.submitButton:hover {
+  border: none;
+  background-color: rgb(255, 85, 0);
+}
+
+.information {
+  position: absolute;
+  right: 0;
+}
+
+.footerButton {
+  height: 2.77vw;
+  width: 2.77vw;
+  background-color: rgba(256, 256, 256, 0.05);
+  border: none;
+  transition: 0.2s;
+  border-radius: 4px;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+.footerButton:hover {
+  background-color: rgba(256, 256, 256, 0.3);
+}
+
+.footerButtonClicked {
+  height: 2.77vw;
+  width: 2.77vw;
+  background-color: rgba(256, 256, 256, 0.2); /* Change the background color to white when clicked */
+  border: none;
+  transition: 0.2s;
+  border-radius: 4px;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.footerButton:hover {
+  background-color: rgba(256, 256, 256, 0.3);
+}
+
+span {
+  font-family: 'Gotham';
+}
+
+input:focus {
+  border: 1.5px solid #452C78;
+  color: #452C78;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes chevronSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
