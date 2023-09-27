@@ -42,6 +42,7 @@ function App() {
 	const serviceClickHanlder = () => {
 		console.log("Direct to Explore Service page")
 		setServiceClicked(!serviceClicked)
+		setRequestClicked(false)
 		setClickedIndex(1)
 		if (clickedIndex === 1) {
 			setClickedIndex (0)
@@ -50,6 +51,7 @@ function App() {
 	const requestClickHandler = () => {
 		console.log("Direct to Online Request page")
 		setRequestClicked(!requestClicked)
+		setServiceClicked(false)
 		setClickedIndex(2)
 		if (clickedIndex === 2) {
 			setClickedIndex (0)
@@ -58,6 +60,8 @@ function App() {
 	const answerClickHandler = () => {
 		console.log("Direct to Find Answer page")
 		setClickedIndex(3)
+		setRequestClicked(false)
+		setServiceClicked(false)
 		if (clickedIndex === 3) {
 			setClickedIndex (0)
 		}
@@ -65,6 +69,8 @@ function App() {
 	const tickedClickHandler = () => {
 		console.log("Direct to My Tickets page")
 		setClickedIndex(4)
+		setRequestClicked(false)
+		setServiceClicked(false)
 		if (clickedIndex === 4) {
 			setClickedIndex (0)
 		}
